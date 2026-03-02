@@ -1,0 +1,93 @@
+---
+title: "M04-Reflection Essay-Advanced Data Visualization"
+author: "Geovanni Flores"
+date: "Feburary 27, 2026"
+format: 
+  html: 
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-link: true
+    theme: cosmo
+    code-overflow: wrap
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+editor: visual
+execute: 
+  freeze: auto
+---
+
+## Summarized learning from Pederson
+
+::: callout-note
+### My Response
+
+In the workshop, I learned about ggplot2 and the larger "extended universe" of the package. This allows me to move beyond the standard charts. My key takeaways would include the power of the plot composition and how they use it for patchwork packages. This uses simple math operators and allows it to align plots into a single professional looking visualization. I also learned about gganimate and how it allows me to extend the grammar to the graphics which would include things like "transitions". This allows the data to move through the time. I found while watching the video that Pederson also pointed towards group aesthetics as a essential animation. This visual allows objects to be seen as the same entity across all different frameworks. I learned how ggforce for advanced annotations and how to highlight specific data cluster and how to use ggforce for an better visualizing complex networks for using a tidy approach.
+:::
+
+## Scales and Transformation
+
+::: panel-tabset
+## Summary
+
+Scales would act as the bridge that is found to bring raw data and the final representation together. Determining on how each variable on the maps to aesthetics (X,Y, Color and fill). The video also explained how to use things like scale\_ functions and how to handle discrete vs continuous data. Also how to apply log transformation to unskew data Lastly, format labels (turning 0.06 into 6%).
+
+## Fit with the Grammar of Graphics
+
+Scales are a core component of the grammar of R. Every aesthetic in the plot has a scale, from basic to default. Transformations fit into this grammar because it is allowing the user to change the different coordinates on the mapping or data presentation. This could be things like reversing an axis or just using a log scale. This is all done while without changing the underlying data itself.
+:::
+
+## Robinson's New Functions
+
+::: callout-note
+### My Response
+
+From the David Robinson's analysis, I found these three to be the most helpful functions:
+
+-   **fct_reorder():** This one allowed me to automatically reorder a factor (an example could be like a brand name) which is based on a numeric value (like a view count of things). This essential created for me a sorted and readable bar chart which makes my analysis look more professional overall.
+
+-   **scales: :comma():** This function is used for within scales labels. This formats large numbers with commas. This makes axes easier to read for viewers to read and digest.
+
+-   **broom: :tidy():** This is basically used to convert complex of the statistical model and its outputs. Things like logistic regression turn into clean and tidy data. This can immediately be plotted into ggplot2.
+:::
+
+## gt and gtExtra Packages
+
+::: callout-note
+### My Response
+
+My favorite thing about gtExtras provides things like "wrappers". This makes it easier by simplifying complex tables that format things such as theme or distribution icons into single lining of codes. These packages would complement charts which would allow for inline visualization. This are spark lines, density plots, or bar charts that go directly into the table cells. This allows the users to to immediately see the exact values while also getting the immediate visual intuition of the graphic. My preference would be to use tables over the charts when the viewers would need to see things like the exact data point. I'd rather this over having an estimate from a coordinate system. When I would need things to present, my choice would be a dense summary of statistics (mean,median and SD) which is all in a compact space.
+:::
+
+## Cédric Scherer's Tips and Tricks
+
+::: callout-note
+### My Response
+
+The three tips and tricks I learned from the Data Visualization guru was:
+
+-   **plot.title.position = "plot":** This moves the title and allows it to be aligned with the outer margin of the entire plot rather than it just being in the inner grid panel. I liked this command because it eliminated the "lost" look that the default titles had. This also made the layout feel more professional overall.
+
+-   **Using patchwork for Storytelling:** Scherer uses this to stitch together all the different type of plots. This creates a cohesive narrative for the document. I liked this because it made the final result look more professional and had a info graphic instead of a series of charts which may seem disconnected from the rest.
+
+-   **Using ggtext for Markdown/HTML:** This allowed me to easily italicize or color specific words into the titles and labels. This could be all accessed without all the complex coding. I liked this because it added professionalism to my annotations.
+:::
+
+## Advanced Visulization Approach
+
+::: callout-note
+### My Response
+
+What impressed me the most about the tools in the advanced note book was the limitless versatility of the ggplot2 system. I leanred that it could be used for almost everything. Starting from scientific spatial maps to things such as "moon charts". The ability s of the turn off "clipping" allowed me to label the flow of the outside plot area. It was labeled as "geeky" but it was a effective tool which made the communications data better.
+:::
+
+## Challenges an Overcoming them
+
+::: callout-note
+### My Response
+
+My primary challenge was the sheer volume of options available. With hundreds of geoms, dozens of themes and over 60 scales, the system can feel overwhelming at times and tough to point a single look that would look perfect for a document. Another challenge is being able to manage these layouts so that the nested plots can remain in there spots perfectly aligned.
+
+To overcome these issues, I would sources focusing on the "theoretical backbone" of the grammar and once understanding the underlying logic, it allows me to know every function because of knowing where the specific solution is. So I don't just rely on memorizing everything. Observing the "Tidy Tuesday Community" also provided a playground to see how others work on similar problems and how they build there diverse visualization techniques.
+:::
